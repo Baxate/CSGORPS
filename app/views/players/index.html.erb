@@ -1,0 +1,24 @@
+<style>
+  a.name {
+    font-family: Myriad Pro;
+    font-weight: lighter;
+    font-size: 30px;
+    margin-top: 15px;
+    position: fixed;
+    color: #555555;
+  }
+
+  h1.link {
+  
+  }
+</style>
+
+
+<div class="steamtrade">
+  <a href="<%= current_user.profile_url %>" class="steamtradeboxuser"><%= image_tag current_user.avatar_url %></a>
+  <a class="name"><%= current_user.nickname %></a>
+  <label class="link"> Steam Trade Link (
+  <a href="https://steamcommunity.com/id/me/tradeoffers/privacy#trade_offer_access_url" target="_blank"> What's my link?</a>
+
+  )
+</div>
